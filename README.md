@@ -28,7 +28,7 @@ A Spring Boot application for managing users, pets, and purchase history.
    ```
 
 4. **Build and run the project**
-- Run the application via Intellij IDEA, or you will need to set up and install the needed JDK and Maven packages.
+- Run the application via Intellij IDEA, or you will need to set up the local variables according to the operating system that you will run this app.
 - You could use this command if you want to run it through the terminal:
   ```bash
   ./mvnw clean package
