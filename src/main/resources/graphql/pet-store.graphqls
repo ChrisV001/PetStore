@@ -1,0 +1,36 @@
+type UserDTO {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    email: String!
+    budget: Float!
+}
+
+type PetDTO {
+    id: ID!
+    name: String!
+    description: String
+    birthDate: String!
+    price: Float!
+    owner: UserDTO
+    rating: Int
+}
+
+type HistoryRecordDTO {
+    id: ID!
+    dateExecuted: String!
+    successCount: Int!
+    failCount: Int!
+}
+
+type Query {
+    listAllUsers: [UserDTO]!
+    listAllHistoryLogs: [HistoryRecordDTO!]!
+    listAllPets: [PetDTO]!
+}
+
+type Mutation {
+    createUsers: [UserDTO!]!
+    buyPets: [PetDTO!]!
+    createPets: [PetDTO!]!
+}
